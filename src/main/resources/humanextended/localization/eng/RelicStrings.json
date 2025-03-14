@@ -1,0 +1,9 @@
+{
+  "${modID}:TopHat": {
+    "NAME": "Top Hat",
+    "FLAVOR": "Fancy",
+    "DESCRIPTIONS": [
+      "what a cool hat"
+    ]
+  }
+}

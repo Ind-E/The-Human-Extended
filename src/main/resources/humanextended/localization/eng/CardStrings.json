@@ -1,0 +1,6 @@
+{
+  "${modID}:HealthyEating": {
+    "NAME": "Healthy Eating",
+    "DESCRIPTION": "Gain !M! thehuman:Healthiness. NL Lose !${modID}:PEACEFUL_LOSS! thehuman:Peaceful."
+  }
+}

@@ -1,0 +1,13 @@
+# Project exclude paths
+/target/
+/.idea/
+
+/.vscode/
+
+/.settings/
+
+.project
+.factorypath
+.classpath
+
+pom.xml
