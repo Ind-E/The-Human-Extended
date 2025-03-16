@@ -40,7 +40,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 import basemod.DevConsole;
-import humanextended.HumanExpansionMod;
+import humanextended.HumanExtendedMod;
 import humanextended.actions.TimedVFXAction;
 
 public class Wiz {
@@ -99,7 +99,7 @@ public class Wiz {
                 AbstractDungeon.bossRelicPool.add(origRelic.relicId);
                 break;
             default:
-                HumanExpansionMod.logger.info("Relic tier does not have a pool: " + origRelic.tier);
+                HumanExtendedMod.logger.info("Relic tier does not have a pool: " + origRelic.tier);
                 break;
         }
     }
@@ -550,7 +550,7 @@ public class Wiz {
 
     public static String repeatString(String s, int n) {
         if (n <= 0) {
-            HumanExpansionMod.logger.info("repeatString called with n <= 0 (n = " + n + ")");
+            HumanExtendedMod.logger.info("repeatString called with n <= 0 (n = " + n + ")");
             return "";
         }
         StringBuilder repeatedString = new StringBuilder();

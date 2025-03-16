@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-import static humanextended.HumanExpansionMod.*;
+import static humanextended.HumanExtendedMod.*;
 
 import java.util.HashMap;
 import java.util.Locale;

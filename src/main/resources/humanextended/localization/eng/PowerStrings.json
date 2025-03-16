@@ -1,278 +1,39 @@
 {
-  "${modID}:DescentIntoMadnessPower": {
-    "NAME": "Descent Into Madness",
+  "${modID}:AppleADayPower": {
+    "NAME": "Apple a Day",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b%d #yMadness into your hand."
+      "At the start of your turn, gain #b%d #yHealthiness. If you have #b%d or more #yHealthiness, add #b%d #yLollipop%s into your hand instead."
     ]
   },
-  "${modID}:BadlandsPower": {
-    "NAME": "Badlands",
+  "${modID}:AppleADayPlusPower": {
+    "NAME": "Apple a Day+",
     "DESCRIPTIONS": [
-      "Whenever you apply a debuff other than #yWeak to an enemy, apply #b%d #yWeak [REMOVE_SPACE]."
+      "At the start of your turn, gain #b%d #yHealthiness. If you have #b%d or more #yHealthiness, add #b%d #yLollipop%s into your hand instead."
     ]
   },
-  "${modID}:DreadfulOmenPower": {
-    "NAME": "Dreadful Omen",
+  "${modID}:JerryRigPower": {
+    "NAME": "Jerry Rig",
     "DESCRIPTIONS": [
-      "Whenever you draw a card during your turn, ALL enemies lose HP equal to the number of cards in your hand.",
-      "Whenever you draw a card during your turn, ALL enemies lose HP equal to #b%d times the number of cards in your hand."
+      "Whenever you discard a card, find #b%d #yJunk."
     ]
   },
-  "${modID}:ModifiedHandSizePower": {
-    "NAME": "Hand Size",
+  "${modID}:GunkataPower": {
+    "NAME": "Gunkata",
     "DESCRIPTIONS": [
-      "Max hand size reduced by #b",
-      " (minimum 1 card).",
-      "Max hand size increased by #b",
-      " (maximum 15 cards)."
+      "#yWeapons give you [#a83277]Technique[] when played."
     ]
   },
-  "${modID}:RationsPower": {
-    "NAME": "Rations",
+  "${modID}:GarbageCollectorPower2": {
+    "NAME": "Garbage Collector",
     "DESCRIPTIONS": [
-      "At the start of your turn, lose #b1 stack of #yRations unless you are at Layer 0. #rIf #ryou #rstart #ryour #rturn #rwith #rno #rRations, #yAscend [REMOVE_SPACE].",
-      "#rNo #rRations #rleft. At the start of your turn, #yAscend [REMOVE_SPACE]."
+      "The first #yJunk you play each turn is played twice.",
+      "The first #b%d #yJunk you play each turn are played twice."
     ]
   },
-  "${modID}:CartridgePower": {
-    "NAME": "Cartridges",
+  "${modID}:AtPeacePower": {
+    "NAME": "At Peace",
     "DESCRIPTIONS": [
-      "The next time you #yAscend [REMOVE_SPACE], negate any downsides.",
-      "The next #b%d times you #yAscend [REMOVE_SPACE], negate any downsides."
-    ]
-  },
-  "${modID}:StrongMindPower": {
-    "NAME": "Strong Mind",
-    "DESCRIPTIONS": [
-      "Whenever an #yEthereal card is exhausted, gain #b%d #yBlock and draw #b%d card%s."
-    ]
-  },
-  "${modID}:ClimbingPower": {
-    "NAME": "Climbing Rope",
-    "DESCRIPTIONS": [
-      "Whenever you #yAscend or #yDescend [REMOVE_SPACE], gain #b%d #yBlock [REMOVE_SPACE]."
-    ]
-  },
-  "${modID}:LastDivePower": {
-    "NAME": "Last Dive",
-    "DESCRIPTIONS": [
-      "At the start of your turn, #yAscend [REMOVE_SPACE].",
-      "At the start of your turn, #yAscend #b%d times."
-    ]
-  },
-  "${modID}:CrawlPower": {
-    "NAME": "Crawl",
-    "DESCRIPTIONS": [
-      "Whenever you draw a #b0 cost card, gain #b%d #yBlock [REMOVE_SPACE]."
-    ]
-  },
-  "${modID}:DisorientPower": {
-    "NAME": "Disorient",
-    "DESCRIPTIONS": [
-      "At the start of your turn, apply #b%d #yVertigo to ALL enemies."
-    ]
-  },
-  "${modID}:UnbalancePower": {
-    "NAME": "Unbalanced",
-    "DESCRIPTIONS": [
-      "Whenever an enemy loses HP from #yVertigo, gain %s."
-    ]
-  },
-  "${modID}:ZoaholicPower": {
-    "NAME": "Zoaholic",
-    "DESCRIPTIONS": [
-      "Take #b%d%% less damage. Decreases by #b10%% each turn.",
-      "Take #b%d%% more damage. Increases by #b10%% each turn."
-    ]
-  },
-  "${modID}:SeekerCampPower": {
-    "NAME": "Seeker Camp",
-    "DESCRIPTIONS": [
-      "At the start of your turn, gain #b1 #yStrength and #yDexterity [REMOVE_SPACE], then reduce this by #b1 [REMOVE_SPACE]."
-    ]
-  },
-  "${modID}:SpinUpPower": {
-    "NAME": "Spun Up",
-    "DESCRIPTIONS": [
-      "Whenever an Attack deals unblocked damage to an enemy without #yVertigo [REMOVE_SPACE], apply #b%d #yVertigo [REMOVE_SPACE]."
-    ]
-  },
-  "${modID}:AllInPower": {
-    "NAME": "All In",
-    "DESCRIPTIONS": [
-      "You cannot gain #yBlock from cards next turn."
-    ]
-  },
-  "${modID}:GamblePower": {
-    "NAME": "Risk",
-    "DESCRIPTIONS": [
-      "If you win next turn, gain #b",
-      " Gold."
-    ]
-  },
-  "${modID}:GoldIfWinPower": {
-    "NAME": "Reward",
-    "DESCRIPTIONS": [
-      "If you win this turn, gain #b",
-      " Gold."
-    ]
-  },
-  "${modID}:DoubleDownPower": {
-    "NAME": "Doubled Down",
-    "DESCRIPTIONS": [
-      "If you end your turn with #b",
-      " or less #yBlock, apply #b",
-      " #yVulnerable to ALL enemies."
-    ]
-  },
-  "${modID}:ChaosEchoPower": {
-    "NAME": "Echo",
-    "DESCRIPTIONS": [
-      "The next card you play this turn is played twice.",
-      "The next #b",
-      " cards you play this turn are played twice."
-    ]
-  },
-  "${modID}:FoolsFortunePower": {
-    "NAME": "Fool's Fortune",
-    "DESCRIPTIONS": [
-      "If you end your turn with no Attacks in hand, gain #b",
-      " #yBlock and [E] next turn."
-    ]
-  },
-  "${modID}:DeadlyWagerPower": {
-    "NAME": "Deadly Wager",
-    "DESCRIPTIONS": [
-      "At the start of your turn, lose #b",
-      " HP."
-    ]
-  },
-  "${modID}:StackedDeckPower": {
-    "NAME": "Stacked Deck",
-    "DESCRIPTIONS": [
-      "At the end of your turn, set the cost of a random card in your draw pile to 0 until played.",
-      "At the end of your turn, set the cost of #b",
-      " random cards in your draw pile to #b0 until played."
-    ]
-  },
-  "${modID}:HitAndRunPower": {
-    "NAME": "Hit and Run",
-    "DESCRIPTIONS": [
-      "#yAttacks deal double damage. Whenever you play an Attack, #yExhaust it."
-    ]
-  },
-  "${modID}:PokerFacePower": {
-    "NAME": "Poker Face",
-    "DESCRIPTIONS": [
-      "In #b",
-      " turn, set your HP to #b",
-      " turns, set your HP to #b"
-    ]
-  },
-  "${modID}:HighRollerPower": {
-    "NAME": "High Roller",
-    "DESCRIPTIONS": [
-      "Whenever you play a #ySix, draw #b",
-      " card.",
-      " cards."
-    ]
-  },
-  "${modID}:InvigoratingRifflePower": {
-    "NAME": "Invigorating Riffle",
-    "DESCRIPTIONS": [
-      "Whenever a card is Exhausted, gain #b",
-      " Vigor."
-    ]
-  },
-  "${modID}:SharksEmbracePower": {
-    "NAME": "Shark's Embrace",
-    "DESCRIPTIONS": [
-      "Whenever a card is Exhausted, discard the leftmost #b",
-      " card, then draw #b",
-      "  card.",
-      " cards, then draw #b",
-      " cards."
-    ]
-  },
-  "${modID}:LongGamePower": {
-    "NAME": "Long Game",
-    "DESCRIPTIONS": [
-      "In #b",
-      " turn, add ",
-      " turns, add ",
-      " to your hand."
-    ]
-  },
-  "${modID}:CripplingDebtPower": {
-    "NAME": "Crippling Debt",
-    "DESCRIPTIONS": [
-      "When its HP drops to #b",
-      " or below, it dies. Increases by #b25% at the start of each turn"
-    ]
-  },
-  "${modID}:DrawbackPower": {
-    "NAME": "Drawback",
-    "DESCRIPTIONS": [
-      "When attacked, draw a card and reduce this by #b1."
-    ]
-  },
-  "${modID}:BlitzPower": {
-    "NAME": "Blitz",
-    "DESCRIPTIONS": [
-      "Whenever you attack, gain [E] ."
-    ]
-  },
-  "${modID}:CardCascadePower": {
-    "NAME": "Card Cascade",
-    "DESCRIPTIONS": [
-      "Whenever you draw a card, deal #b",
-      " damage to a random enemy."
-    ]
-  },
-  "${modID}:MelonPower": {
-    "NAME": "Melon",
-    "DESCRIPTIONS": [
-      "When attacked, draw a card."
-    ]
-  },
-  "${modID}:GoForBrokePower": {
-    "NAME": "Gone Broke",
-    "DESCRIPTIONS": [
-      "Whenever you play a card, apply #b",
-      " #yCrippling #yDebt to a random enemy and increase this by #b",
-      ". Resets to #b",
-      " each turn."
-    ]
-  },
-  "${modID}:DangerousInvestmentPower": {
-    "NAME": "Invested",
-    "DESCRIPTIONS": [
-      "While this enemy is alive, gain",
-      "at the start of your turn"
-    ]
-  },
-  "${modID}:ExposedPower": {
-    "NAME": "Exposed",
-    "DESCRIPTIONS": [
-      "Receives #b%d%% more damage from #yAttacks [REMOVE_SPACE]. Upon reaching #b%d stacks, remove #b%d stacks and gain #b%d Block."
-    ]
-  },
-  "${modID}:StreakingStrike": {
-    "NAME": "Attack Streak",
-    "DESCRIPTIONS": [
-      "At the start of your turn, deal #b%d damage to a random enemy. When you end turn without playing an #yAttack [REMOVE_SPACE], lose this effect."
-    ]
-  },
-  "${modID}:InfinitePower": {
-    "NAME": "Infinite Power",
-    "DESCRIPTIONS": [
-      "At the start of your turn, gain #b%d #yStrength and #b1 #yDexterity [REMOVE_SPACE]. When you end turn without playing a #yPower [REMOVE_SPACE], lose this effect."
-    ]
-  },
-  "${modID}:Horse": {
-    "NAME": "Horse",
-    "DESCRIPTIONS": [
-      "At the start of your turn, gain #b%d #yBlock. When you end turn without playing a 0-cost card, lose this effect."
+      "At the start of your turn, gain #b%d #yHealthiness and #b%d #yPeaceful."
     ]
   }
 }

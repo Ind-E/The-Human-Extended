@@ -31,7 +31,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @SpireInitializer
-public class HumanExpansionMod implements
+public class HumanExtendedMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
@@ -39,9 +39,11 @@ public class HumanExpansionMod implements
         EditRelicsSubscriber {
     public static ModInfo info;
     public static String modID; // Edit your pom.xml to change this
+
     static {
         loadModInfo();
     }
+
     private static final String resourcesFolder = checkResourcesPath();
     public static final Logger logger = LogManager.getLogger(modID); // Used to output to the console.
 
@@ -54,12 +56,12 @@ public class HumanExpansionMod implements
     // This will be called by ModTheSpire because of the @SpireInitializer
     // annotation at the top of the class.
     public static void initialize() {
-        new HumanExpansionMod();
+        new HumanExtendedMod();
     }
 
-    public HumanExpansionMod() {
+    public HumanExtendedMod() {
         BaseMod.subscribe(this); // This will make BaseMod trigger all the subscribers at their appropriate
-                                 // times.
+        // times.
         logger.info(modID + " subscribed to BaseMod.");
     }
 
@@ -99,7 +101,7 @@ public class HumanExpansionMod implements
          * The same process is used to load keywords slightly below.
          */
         loadLocalization(defaultLanguage); // no exception catching for default localization; you better have at least
-                                           // one that works.
+        // one that works.
         if (!defaultLanguage.equals(getLangString())) {
             try {
                 loadLocalization(getLangString());
@@ -190,8 +192,8 @@ public class HumanExpansionMod implements
      * Checks the expected resources path based on the package name.
      */
     private static String checkResourcesPath() {
-        String name = HumanExpansionMod.class.getName(); // getPackage can be iffy with patching, so class name is used
-                                                  // instead.
+        String name = HumanExtendedMod.class.getName(); // getPackage can be iffy with patching, so class name is used
+        // instead.
         int separator = name.indexOf('.');
         if (separator > 0)
             name = name.substring(0, separator);
@@ -205,7 +207,7 @@ public class HumanExpansionMod implements
                 " Either make sure the folder under resources has the same name as your mod's package, or change the line\n"
                 +
                 "\t\"private static final String resourcesFolder = checkResourcesPath();\"\n" +
-                "\tat the top of the " + HumanExpansionMod.class.getSimpleName() + " java file.");
+                "\tat the top of the " + HumanExtendedMod.class.getSimpleName() + " java file.");
     }
 
     /**
@@ -218,7 +220,7 @@ public class HumanExpansionMod implements
                 return false;
             Set<String> initializers = annotationDB.getAnnotationIndex().getOrDefault(SpireInitializer.class.getName(),
                     Collections.emptySet());
-            return initializers.contains(HumanExpansionMod.class.getName());
+            return initializers.contains(HumanExtendedMod.class.getName());
         }).findFirst();
         if (infos.isPresent()) {
             info = infos.get();
@@ -242,7 +244,6 @@ public class HumanExpansionMod implements
                 .packageFilter(CustomRelic.class)
                 .any(CustomRelic.class, (info, relic) -> {
                     BaseMod.addRelicToCustomPool(relic, TheHuman.Enums.COLOR_SKIN);
-
 
                     UnlockTracker.markRelicAsSeen(relic.relicId);
                 });

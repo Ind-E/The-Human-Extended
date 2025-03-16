@@ -5,5 +5,19 @@
       "example"
     ],
     "DESCRIPTION": "wow a cool keyword."
+  },
+  {
+    "PROPER_NAME": "[#a83277]Technique[]",
+    "NAMES": [
+      "technique"
+    ],
+    "DESCRIPTION": "Whenever you use a [#a83277]Technique[], if the last card you played was also a [#a83277]Technique[], perform an additional effect."
+  },
+  {
+    "PROPER_NAME": "[#2000a7]Lifestyle[]",
+    "NAMES": [
+      "lifestyle"
+    ],
+    "DESCRIPTION": "Whenever you shuffle your draw pile, perform an additional effect."
   }
 ]

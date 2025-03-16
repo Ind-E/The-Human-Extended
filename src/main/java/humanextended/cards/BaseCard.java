@@ -4,9 +4,12 @@ package humanextended.cards;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.CommonKeywordIconsField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -23,7 +26,7 @@ import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
 
-import humanextended.HumanExpansionMod;
+import humanextended.HumanExtendedMod;
 import humanextended.util.CardStats;
 import humanextended.util.TriFunction;
 import humanextended.util.Wiz;
@@ -35,7 +38,7 @@ public abstract class BaseCard extends CustomCard {
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
 
     protected static String makeID(String name) {
-        return HumanExpansionMod.makeID(name);
+        return HumanExtendedMod.makeID(name);
     }
 
     protected CardStrings cardStrings;
@@ -96,6 +99,33 @@ public abstract class BaseCard extends CustomCard {
         this.damageUpgrade = 0;
         this.blockUpgrade = 0;
         this.magicUpgrade = 0;
+
+        CommonKeywordIconsField.useIcons.set(this, Boolean.TRUE);
+    }
+
+    protected List<AbstractCard> cardsToPreviewList = new ArrayList<>();
+    private float rotationTimer = 0;
+    private int previewIndex;
+
+
+    @Override
+    public void update() {
+        super.update();
+        if (!cardsToPreviewList.isEmpty()) {
+            if (hb.hovered) {
+                if (rotationTimer <= 0F) {
+                    rotationTimer = 2F;
+                    cardsToPreview = cardsToPreviewList.get(previewIndex);
+                    if (previewIndex == cardsToPreviewList.size() - 1) {
+                        previewIndex = 0;
+                    } else {
+                        previewIndex++;
+                    }
+                } else {
+                    rotationTimer -= Gdx.graphics.getDeltaTime();
+                }
+            }
+        }
     }
 
     private static String getName(String ID) {
@@ -492,7 +522,7 @@ public abstract class BaseCard extends CustomCard {
 
             if (this.upgradesDescription) {
                 if (cardStrings.UPGRADE_DESCRIPTION == null) {
-                    HumanExpansionMod.logger
+                    HumanExtendedMod.logger
                             .error("Card " + cardID + " upgrades description and has null upgrade description.");
                 } else {
                     this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

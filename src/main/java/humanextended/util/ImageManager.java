@@ -1,6 +1,6 @@
 package humanextended.util;
 
-import static humanextended.HumanExpansionMod.imagePath;
+import static humanextended.HumanExtendedMod.imagePath;
 import static humanextended.util.TextureLoader.getTexture;
 
 import com.badlogic.gdx.graphics.Texture;

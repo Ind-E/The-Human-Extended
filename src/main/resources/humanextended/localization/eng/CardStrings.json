@@ -2,5 +2,92 @@
   "${modID}:HealthyEating": {
     "NAME": "Healthy Eating",
     "DESCRIPTION": "Gain !M! thehuman:Healthiness. NL Lose !${modID}:PEACEFUL_LOSS! thehuman:Peaceful."
+  },
+  "${modID}:CheatDay": {
+    "NAME": "Cheat Day",
+    "DESCRIPTION": "Gain !M! thehuman:Peaceful. NL Lose !${modID}:HEALTHINESS_LOSS! thehuman:Healthiness."
+  },
+  "${modID}:SliceOfCake": {
+    "NAME": "Slice of Cake",
+    "DESCRIPTION": "Lose !M! theHuman:Healthiness. NL Make a wish."
+  },
+  "${modID}:Lollipop": {
+    "NAME": "Lollipop",
+    "DESCRIPTION": "Lose !M! theHuman:Healthiness. NL Gain !B! Block."
+  },
+  "theHuman:DumpsterDiving": {
+    "NAME": "Dumpster Diving",
+    "DESCRIPTION": "Find !M! thehuman:Junk. NL If this card is discarded from your hand, find !${modID}:DISCARD! thehuman:Junk."
+  },
+  "theHuman:Backpack": {
+    "NAME": "Chocolate Bar",
+    "DESCRIPTION": "Lose !M! thehuman:Healthiness. NL Gain [E] .",
+    "UPGRADE_DESCRIPTION": "Lose !M! thehuman:Healthiness. NL Gain [E] [E] ."
+  },
+  "theHuman:KeepingFit": {
+    "NAME": "Apple a Day",
+    "DESCRIPTION": "Gain !M! thehuman:Healthiness at the start of your turn. NL If you start your turn with !${modID}:LIMIT! or more thehuman:Healthiness, add a *Lollipop to your hand instead."
+  },
+  "theHuman:Ageing": {
+    "NAME": "Aikido",
+    "DESCRIPTION": "If the enemy intends to attack, gain !M! Dexterity. NL Otherwise, enemy loses !M! Strength. NL [#a83277]Technique[]: add a copy of this to your discard pile."
+  },
+  "theHuman:Arcade": {
+    "NAME": "Door Kick",
+    "DESCRIPTION": "Lose !M! thehuman:Healthiness. NL Deal !D! damage. NL [#a83277]Technique[]: gain !${modID}:HEALTH! thehuman:Healthiness."
+  },
+  "theHuman:BackPain": {
+    "NAME": "Reevaluate",
+    "DESCRIPTION": "Discard your hand. NL Draw !M! cards. NL Activate all [#2000a7]Lifestyle[] effects in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. draw !M! cards. Activate all [#2000a7]Lifestyle[] effects in your draw and discard piles. NL Exhaustive !stslib:ex!."
+  },
+  "theHuman:Dieting": {
+    "NAME": "Balanced Diet",
+    "DESCRIPTION": "{@@}Shuffle !M! *Healthy *Eating{!Upgrades!|>0=+} and 1 *Cheat *Day{!Upgrades!|>0=+} into your draw pile."
+  },
+  "theHuman:Physiotherapy": {
+    "NAME": "Physiotherapy",
+    "DESCRIPTION": "Exhaust 3 cards. NL Gain !B! Block. NL Gain !M! thehuman:Healthiness."
+  },
+  "theHuman:TrashToTreasure": {
+    "NAME": "Trash To Treasure",
+    "DESCRIPTION": "Exhaust all thehuman:Junk in your hand. NL For each thehuman:Junk Exhausted this way, gain [E] ."
+  },
+  "theHuman:DualWielding": {
+    "NAME": "Gunkata",
+    "DESCRIPTION": "thehuman:Weapons now give you [#a83277]Technique[]."
+  },
+  "theHuman:Exercise": {
+    "NAME": "Exercise",
+    "DESCRIPTION": "Gain [E]  for every 5 theHuman:Healthiness you have. NL [#2000a7]Lifestyle[]: gain 1 theHuman:Healthiness."
+  },
+  "theHuman:OnTheStreets": {
+    "NAME": "On The Streets",
+    "DESCRIPTION": "When drawn, deal !D! damage to a random enemy. NL Add a thehuman:Weapon and !M! thehuman:Junk to your hand."
+  },
+  "theHuman:Risktaker": {
+    "NAME": "Jerry Rig",
+    "DESCRIPTION": "Whenever you discard a card, find 1 theHuman:Junk."
+  },
+  "theHuman:SilverGeneration": {
+    "NAME": "At Peace",
+    "DESCRIPTION": "At the start of your turn, gain !M! theHuman:Healthiness and !M! theHuman:Peaceful."
+  },
+  "theHuman:Happiness": {
+    "NAME": "Yoga",
+    "DESCRIPTION": "Gain !M! thehuman:Healthiness. NL Shuffle a *Deep *Thought into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !M! thehuman:Healthiness. NL Add a *Deep *Thought into your hand."
+  },
+  "theHuman:LivingItUp": {
+    "NAME": "Living It Up",
+    "DESCRIPTION": "{@@}Draw !M! card{!Upgrades!|>0=s}. NL Discard !M! card{!Upgrades!|>0=s}. NL [#2000a7]Lifestyle[]: gain [E] . NL thehuman:Inventory."
+  },
+  "theHuman:GarbageCollector": {
+    "NAME": "Garbage Collector",
+    "DESCRIPTION": "{@@}The first {!Upgrades!|>0=!M!} theHuman:Junk you play each turn {!Upgrades!|0=is|@=are} played twice."
+  },
+  "theHuman:BirthdayCake": {
+    "NAME": "Birthday Cake",
+    "DESCRIPTION": "Add !M! *Slices *of *Cake into your hand."
   }
 }

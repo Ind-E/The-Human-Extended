@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import humanextended.util.GeneralUtils;
 import humanextended.util.TextureLoader;
 
-import static humanextended.HumanExpansionMod.relicPath;
+import static humanextended.HumanExtendedMod.relicPath;
 
 public abstract class BaseRelic extends CustomRelic {
     public AbstractCard.CardColor pool = null;
