@@ -91,15 +91,15 @@
     "DESCRIPTION": "Shuffle !M! *Slices *of *Cake into your draw pile."
   },
   "${modID}:Slice1": {
-    "NAME": "Slice of Peace",
+    "NAME": "Wish for Peace",
     "DESCRIPTION": "At the start of your next turn, gain !M! theHuman:Peaceful."
   },
   "${modID}:Slice2": {
-    "NAME": "Slice of Healthiness",
+    "NAME": "Wish for Health",
     "DESCRIPTION": "At the start of your next turn, gain !M! theHuman:Healthiness."
   },
   "${modID}:Slice3": {
-    "NAME": "Slice of Gold",
+    "NAME": "Wish for Wealth",
     "DESCRIPTION": "At the start of your next turn, gain !M! Gold."
   }
 }

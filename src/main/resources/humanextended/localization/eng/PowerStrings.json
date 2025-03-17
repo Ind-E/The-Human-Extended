@@ -37,19 +37,19 @@
     ]
   },
   "${modID}:Slice1Power": {
-    "NAME": "Slice of Peace",
+    "NAME": "Wished for Peace",
     "DESCRIPTIONS": [
       "At the start of your next turn, gain #b%d #yPeaceful."
     ]
   },
   "${modID}:Slice2Power": {
-    "NAME": "Slice of Healthiness",
+    "NAME": "Wished for Health",
     "DESCRIPTIONS": [
       "At the start of your next turn, gain #b%d #yHealthiness."
     ]
   },
   "${modID}:Slice3Power": {
-    "NAME": "Slice of Gold",
+    "NAME": "Wished for Wealth",
     "DESCRIPTIONS": [
       "At the start of your next turn, gain #b%d Gold."
     ]

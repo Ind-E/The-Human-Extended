@@ -24,7 +24,7 @@ public class Lollipop extends BaseCard {
             0);
 
     public Lollipop() {
-        super(ID, info, imagePath("cards/skill/HealthyEating.png"));
+        super(ID, info, imagePath("cards/skill/Lollipop.png"));
         setBlock(5, 3);
         setMagic(2);
         setExhaust(true);
