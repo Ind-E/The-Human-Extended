@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import humanextended.cards.BaseCard;
+import humanextended.cards.OnTheStreets;
 import humanextended.util.GeneralUtils;
 import humanextended.util.KeywordInfo;
 import humanextended.util.TextureLoader;
@@ -236,6 +237,7 @@ public class HumanExtendedMod implements
                 .packageFilter(BaseCard.class) // In the same package as this class
                 .setDefaultSeen(true) // And marks them as seen in the compendium
                 .cards(); // Adds the cards
+        BaseMod.addCard(new OnTheStreets());
     }
 
     @Override
