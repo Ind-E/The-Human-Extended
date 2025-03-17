@@ -14,8 +14,7 @@ public class AppleADayPower extends BasePower {
     private static final boolean TURN_BASED = false;
 
     public AppleADayPower(int amount, int amount2) {
-        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount, true, false);
-        loadRegion("berserk");
+        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount);
         this.amount2 = amount2;
         updateDescription();
     }

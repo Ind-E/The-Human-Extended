@@ -14,8 +14,7 @@ public class AtPeacePower extends BasePower {
     private static final boolean TURN_BASED = false;
 
     public AtPeacePower(int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount, true, false);
-        loadRegion("berserk");
+        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount);
     }
 
     @Override

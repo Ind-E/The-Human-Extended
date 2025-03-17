@@ -16,8 +16,7 @@ public class GunkataPower extends BasePower {
     private static final boolean TURN_BASED = false;
 
     public GunkataPower() {
-        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), -1, true, false);
-        loadRegion("berserk");
+        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), -1);
     }
 
     @Override

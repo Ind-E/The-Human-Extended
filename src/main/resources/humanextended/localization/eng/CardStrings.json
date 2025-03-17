@@ -88,6 +88,18 @@
   },
   "theHuman:BirthdayCake": {
     "NAME": "Birthday Cake",
-    "DESCRIPTION": "Add !M! *Slices *of *Cake into your hand."
+    "DESCRIPTION": "Shuffle !M! *Slices *of *Cake into your draw pile."
+  },
+  "${modID}:Slice1": {
+    "NAME": "Slice of Peace",
+    "DESCRIPTION": "At the start of your next turn, gain !M! theHuman:Peaceful."
+  },
+  "${modID}:Slice2": {
+    "NAME": "Slice of Healthiness",
+    "DESCRIPTION": "At the start of your next turn, gain !M! theHuman:Healthiness."
+  },
+  "${modID}:Slice3": {
+    "NAME": "Slice of Gold",
+    "DESCRIPTION": "At the start of your next turn, gain !M! Gold."
   }
 }

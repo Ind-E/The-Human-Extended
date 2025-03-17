@@ -35,5 +35,23 @@
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b%d #yHealthiness and #b%d #yPeaceful."
     ]
+  },
+  "${modID}:Slice1Power": {
+    "NAME": "Slice of Peace",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain #b%d #yPeaceful."
+    ]
+  },
+  "${modID}:Slice2Power": {
+    "NAME": "Slice of Healthiness",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain #b%d #yHealthiness."
+    ]
+  },
+  "${modID}:Slice3Power": {
+    "NAME": "Slice of Gold",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain #b%d Gold."
+    ]
   }
 }

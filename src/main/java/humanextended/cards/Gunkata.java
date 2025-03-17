@@ -1,5 +1,6 @@
 package humanextended.cards;
 
+import basemod.helpers.TooltipInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.UIStrings;
@@ -8,9 +9,7 @@ import humanextended.powers.GunkataPower;
 import humanextended.util.CardStats;
 import humanextended.util.Wiz;
 import theHuman.characters.TheHuman;
-import basemod.helpers.TooltipInfo;
 
-import javax.tools.Tool;
 import java.util.Collections;
 import java.util.List;
 

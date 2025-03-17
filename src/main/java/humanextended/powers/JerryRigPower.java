@@ -18,8 +18,7 @@ public class JerryRigPower extends BasePower implements DiscardHookPatch.OnDisca
     private static final boolean TURN_BASED = false;
 
     public JerryRigPower(int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount, true, false);
-        loadRegion("deva");
+        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount);
     }
 
     @Override

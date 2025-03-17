@@ -23,8 +23,7 @@ public class GarbageCollectorPower2 extends BasePower {
     private int junkDoubledThisTurn = 0;
 
     public GarbageCollectorPower2(int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount, true, false);
-        loadRegion("echo");
+        super(POWER_ID, TYPE, TURN_BASED, Wiz.p(), Wiz.p(), amount);
     }
 
     @Override

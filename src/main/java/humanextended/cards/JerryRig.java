@@ -21,7 +21,7 @@ public class JerryRig extends BaseCard {
             3);
 
     public JerryRig() {
-        super(ID, info, imagePath("missing.png"));
+        super(ID, info, imagePath("cards/power/JerryRig.png"));
         setMagic(1);
         setCostUpgrade(2);
     }
